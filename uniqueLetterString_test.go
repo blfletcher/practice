@@ -5,12 +5,12 @@ import (
 	"testing"
 )
 
-type testCase struct {
+type testCase1 struct {
 	input    string
 	expected int
 }
 
-var testCases = []testCase{
+var testCases1 = []testCase1{
 	{
 		input:    "ABC",
 		expected: 10,
@@ -33,7 +33,11 @@ var testCases = []testCase{
 }
 
 func Test_uniqueLetterString(t *testing.T) {
-	for i, v := range testCases {
+	if true {
+		t.Skip()
+	}
+
+	for i, v := range testCases1 {
 		idx := i
 		tst := v
 
