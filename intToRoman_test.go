@@ -5,12 +5,7 @@ import (
 	"testing"
 )
 
-type testCase3 struct {
-	input    int
-	expected string
-}
-
-var testCases3 = []testCase3{
+var testCasesA = []testCaseIntStr{
 	{
 		input:    3,
 		expected: "III",
@@ -38,7 +33,7 @@ func Test_intToRoman(t *testing.T) {
 		t.Skip()
 	}
 
-	for i, v := range testCases3 {
+	for i, v := range testCasesA {
 		idx := i
 		tst := v
 

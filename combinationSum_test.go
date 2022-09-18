@@ -6,13 +6,13 @@ import (
 	"testing"
 )
 
-type testCase8 struct {
+type testCaseI struct {
 	input1   []int
 	input2   int
 	expected [][]int
 }
 
-var testCases8 = []testCase8{
+var testCasesI = []testCaseI{
 	{
 		input1:   []int{2, 3, 6, 7},
 		input2:   7,
@@ -31,7 +31,7 @@ var testCases8 = []testCase8{
 }
 
 func Test_combinationSum(t *testing.T) {
-	for i, v := range testCases8 {
+	for i, v := range testCasesI {
 		idx := i
 		tst := v
 

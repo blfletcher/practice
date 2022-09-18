@@ -5,12 +5,7 @@ import (
 	"testing"
 )
 
-type testCase5 struct {
-	input    []int
-	expected int
-}
-
-var testCases5 = []testCase5{
+var testCasesC = []testCaseArrIntInt{
 	{
 		input:    []int{1, 3, 1, 2},
 		expected: 44,
@@ -30,7 +25,7 @@ func Test_totalStrength(t *testing.T) {
 		t.Skip()
 	}
 
-	for i, v := range testCases5 {
+	for i, v := range testCasesC {
 		idx := i
 		tst := v
 

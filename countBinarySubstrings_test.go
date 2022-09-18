@@ -5,12 +5,7 @@ import (
 	"testing"
 )
 
-type testCase4 struct {
-	input    string
-	expected int
-}
-
-var testCases4 = []testCase4{
+var testCasesH = []testCaseStrInt{
 	{
 		input:    "00110011",
 		expected: 6,
@@ -26,7 +21,7 @@ func Test_countBinarySubstrings(t *testing.T) {
 		t.Skip()
 	}
 
-	for i, v := range testCases4 {
+	for i, v := range testCasesH {
 		idx := i
 		tst := v
 

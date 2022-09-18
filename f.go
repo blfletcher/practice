@@ -2,12 +2,8 @@ package main
 
 //
 
-// algorithm
-/***********
+func fN([]int) int {
+	//
 
-
-
-************/
-
-func f() {
+	return 0
 }

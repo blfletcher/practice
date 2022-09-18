@@ -5,13 +5,13 @@ import (
 	"testing"
 )
 
-type testCase2 struct {
+type testCaseG struct {
 	input    [][]int
 	size     int
 	expected int
 }
 
-var testCases2 = []testCase2{
+var testCasesG = []testCaseG{
 	{
 		input: [][]int{
 			{1, 3},
@@ -38,7 +38,7 @@ func Test_maximumUnits(t *testing.T) {
 		t.Skip()
 	}
 
-	for i, v := range testCases2 {
+	for i, v := range testCasesG {
 		idx := i
 		tst := v
 

@@ -5,12 +5,7 @@ import (
 	"testing"
 )
 
-type testCase7 struct {
-	input    []string
-	expected int
-}
-
-var testCases7 = []testCase7{
+var testCasesE = []testCaseArrStrInt{
 	{
 		input:    []string{"011001", "000000", "010100", "001000"},
 		expected: 8,
@@ -26,7 +21,7 @@ func Test_numberOfBeams(t *testing.T) {
 		t.Skip()
 	}
 
-	for i, v := range testCases7 {
+	for i, v := range testCasesE {
 		idx := i
 		tst := v
 
