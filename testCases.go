@@ -1,5 +1,10 @@
 package main
 
+type testCaseIntBool struct {
+	input    int
+	expected bool
+}
+
 type testCaseIntStr struct {
 	input    int
 	expected string
