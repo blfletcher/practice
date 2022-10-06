@@ -28,7 +28,7 @@ package main
 				set lowFrequency,highFrequency count to 0
 */
 
-func max(a, b int) int {
+func max4(a, b int) int {
 	if b > a {
 		return b
 	}
@@ -49,9 +49,9 @@ func kadaneMax(s string, currentMax int, lowFrequencyChar, highFrequencyChar byt
 		}
 
 		if lowCount == 0 {
-			currentMax = max(currentMax, highCount-1)
+			currentMax = max4(currentMax, highCount-1)
 		} else {
-			currentMax = max(currentMax, highCount-lowCount)
+			currentMax = max4(currentMax, highCount-lowCount)
 		}
 
 		if highCount < lowCount {

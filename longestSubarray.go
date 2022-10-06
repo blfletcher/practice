@@ -2,25 +2,6 @@ package main
 
 // https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/
 
-/*func longestSubarray(nums []int, limit int) int {
-	maxSize := 0
-	currStart := 0
-	limit64 := float64(limit)
-
-	minQueue, maxQueue := []float64{}, []float64{}
-	for i := range nums {
-		num := float64(nums[i])
-
-		minQueue = append(minQueue, num)
-		maxQueue = append(maxQueue, num)
-		for currStart <= i && math.Abs(maxQueue[0]-minQueue[0]) > limit64 {
-			minQueue = minQueue[]
-		}
-	}
-
-	return maxSize
-}*/
-
 func longestSubarray(nums []int, limit int) int {
 	currStart := 0
 	maxSize := 0
