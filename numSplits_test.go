@@ -18,7 +18,7 @@ var testCasesX = []testCaseStrInt{
 }
 
 func Test_numSplits(t *testing.T) {
-	if false {
+	if true {
 		t.Skip()
 	}
 

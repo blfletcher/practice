@@ -18,7 +18,7 @@ var testCasesAA = []testCaseArrIntInt{
 }
 
 func Test_candy(t *testing.T) {
-	if false {
+	if true {
 		t.Skip()
 	}
 
