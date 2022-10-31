@@ -36,7 +36,14 @@ func Test_fN(t *testing.T) {
 		// replace
 		res := fN(tst.input)
 		if !reflect.DeepEqual(tst.expected, res) {
-			t.Fatal(fmt.Errorf("\n\ntest #%d\n%+v\n\nexpected\n%+v\n\nresult\n%+v\n\n\n", idx, tst.input, tst.expected, res))
+			msg := fmt.Sprintf("\n\ntest #%d\n", idx)
+			msg += fmt.Sprintf("%+v", tst.input)
+			msg += "\n\nexpected\n"
+			msg += fmt.Sprintf("%+v", tst.expected)
+			msg += "\n\nresult\n"
+			msg += fmt.Sprintf("%+v", res)
+			msg += "\n\n\n"
+			t.Fatal(msg)
 		}
 	}
 }

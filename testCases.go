@@ -34,3 +34,18 @@ type testCaseArrStrInt struct {
 	input    []string
 	expected int
 }
+
+type testCaseArrStrStr struct {
+	input    []string
+	expected string
+}
+
+type testCaseArrStrArrStr struct {
+	input    []string
+	expected []string
+}
+
+type testCaseStrArrStr struct {
+	input    string
+	expected []string
+}
